@@ -16,7 +16,7 @@ def quickSort(lst):
         elif lastElement <= firstElement <= middleElement:
             pivot = lst.pop(0)
         else:
-            pivot = lst.pop(-1)
+            pivot = lst.pop()
         lowerPart = []
         greaterPart = []
         for i in lst:
