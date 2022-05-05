@@ -1,4 +1,4 @@
-# By picking median as pivot
+# By picking median as a pivot
 
 def quickSort(lst):
     if len(lst) <= 1:

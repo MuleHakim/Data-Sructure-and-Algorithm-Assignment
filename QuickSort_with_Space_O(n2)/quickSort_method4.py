@@ -1,4 +1,4 @@
-#  By picking a random element as pivot.
+#  By picking a random element as a pivot.
 
 import random
 def quickSort(lst):

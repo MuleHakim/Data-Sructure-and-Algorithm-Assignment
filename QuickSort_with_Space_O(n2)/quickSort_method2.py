@@ -1,4 +1,4 @@
-# By picking the middle element in the unsorted array as pivot.
+# By picking the middle element in the unsorted array as pivot. 
 
 def quickSort(lst):
     if len(lst) <= 1:
@@ -18,5 +18,5 @@ def quickSort(lst):
 def main():
     lst = [12,32,6,55,8,76,11,0,9,15,23,44,99,65,29,33,41,17,38]
     print(quickSort(lst))
-
+    
 main()
