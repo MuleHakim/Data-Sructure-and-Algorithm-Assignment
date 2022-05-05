@@ -1,4 +1,4 @@
-# By picking the first element as pivot.
+# By picking the first element as pivot
 
 def quickSort(lst):
     if len(lst) <= 1:
