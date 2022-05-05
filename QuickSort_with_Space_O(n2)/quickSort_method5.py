@@ -27,7 +27,7 @@ def quickSort(lst):
     return quickSort(lowerPart) + [pivot] + quickSort(greaterPart)
     
 def main():
-    lst = [12,32,6,55,8,76,11,0,9,15,23,44,99,65,29,33,41,17,38,]
+    lst = [12,32,6,55,8,76,11,0,9,15,23,44,99,65,29,33,41,17,38]
     print(quickSort(lst))
 
 main()
