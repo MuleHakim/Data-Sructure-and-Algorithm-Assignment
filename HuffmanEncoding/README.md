@@ -20,14 +20,8 @@
 
 ## License
 
-|      Campus    |              Name                              | ID
-| -------------- | -------------                                  | 
-|        ©   | [Muluken Hakim](https://github.com/mulehakim)  |UGR/1110/12
-|      AAiT  ©   | [Abinet Anamo](https://github.com/abi26anamo)  |UGR/7110/12
-|      AAiT  ©   | Hayat Ibrahim                                  |UGR/189712
-
-| Campus |  Name                                                 | ID          |
-|--------| ------------------------------------------------------| ------------|
-|  AAiT  |  [MULUKEN HAKIM](https://github.com/MuleHakim)        | UGR/1110/12 |
-|  AAiT  |  [Abinet Anamo](https://github.com/abi26anamo)        | UGR/7110/12 |
-|  AAiT  |  Hayat Ibrahim                                        | UGR/1897/12 |
+| Campus  |  Name                                                 | ID          |
+|-------- | ------------------------------------------------------| ------------|
+|  AAiT © |  [MULUKEN HAKIM](https://github.com/MuleHakim)        | UGR/1110/12 |
+|  AAiT © |  [Abinet Anamo](https://github.com/abi26anamo)        | UGR/7110/12 |
+|  AAiT © |  Hayat Ibrahim                                        | UGR/1897/12 |
