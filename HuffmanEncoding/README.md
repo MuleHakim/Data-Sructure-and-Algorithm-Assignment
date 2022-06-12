@@ -15,9 +15,9 @@
 |  The program displays characters, ASCII code of characters, frequencies of characters and the huffman code of the characters in one table|
 |  The program display number of bits before and after compression|
 |  The program display the encoded output for the given text |
-
+| AAiT © [Muluken Hakim](https://github.com/mulehakim)|
 ## License
 
-| AAiT © [Muluken Hakim](https://github.com/mulehakim)|
+
 | AAiT © [Abinet Anamo](https://github.com/abi26anamo)|
 | AAiT © Hayat Ibrahim|
