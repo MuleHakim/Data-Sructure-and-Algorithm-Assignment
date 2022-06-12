@@ -88,3 +88,23 @@ def HuffmanTreeEncoding(data):
         This step will be repeated until the loop terminates which means untill the list is empty.
 
         """
+
+        # sorts the nodeList based on the frequencies
+        nodesList = sorted(nodesList, key=lambda i: i.freq)
+        right = nodesList[0]
+        left = nodesList[1]
+        left.code = 0
+        right.code = 1
+        newNode = HFTNode(left.freq+right.freq, left.character+right.character, left, right)
+        nodesList.remove(left)
+        nodesList.remove(right)
+        nodesList.append(newNode)
+
+    # we store a characters with their code (a dictionary which is characters_to_code) with a variable
+    huffman_encoding = characters_to_code(nodesList[0])
+    # we store the returned value from function "numOfBits" in a variable "before" and "after"
+    before,after = numOfBits(data, huffman_encoding)
+    # we store the returned value from "outputEncoded" in a variable called "encoded_output"
+    encoded_output = outputEncoded(data,huffman_encoding)
+    
+    return encoded_output,before,after,charactersDict,huffman_encoding
