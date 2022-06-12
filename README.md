@@ -36,4 +36,4 @@
 |  2  |   ASCII code for Characters                                              
 |  3  |   Frequencies of Characters
 |  4  |   Huffman code for Characters                                              
-|  5  |   Encoded output for the whole characters or for the given text
+|  5  |   Encoded output for the whole characters or for the given file
