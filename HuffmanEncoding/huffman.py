@@ -108,3 +108,23 @@ def HuffmanTreeEncoding(data):
     encoded_output = outputEncoded(data,huffman_encoding)
     
     return encoded_output,before,after,charactersDict,huffman_encoding
+
+if __name__ == "main":
+    # open the file
+    myFile = open("inputFile.txt", "r")
+    # read the file
+    data = myFile.read()
+    encoding, before, after, charactersDict, huffman_encoding = HuffmanTreeEncoding(data)
+       
+    print("{0:<25s}{1:<25s}{2:<25s}{3:<25s}".format("Character", "ASCII Code", "Frequency", "Huffman Code"))
+    for i in charactersDict.keys():
+        print("{0:<25s}{1:<25d}{2:<25d}{3:<25s}".format(str(i), ord(i), charactersDict[i], huffman_encoding[i]))
+    
+    print("\nTotal bit before compression:", before)
+    print("\n_____________________________________________________________________________________________\n")
+    print("Encoding output:",encoding)
+    print("\n____________________________________________________________________________________________\n_")
+    print("Total bit after compression:",  after,"\n")
+
+    output = open("outputFile.txt","w+")
+    output.write(encoding)
