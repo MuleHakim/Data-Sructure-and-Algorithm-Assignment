@@ -22,11 +22,12 @@
 
 |      Campus    |              Name                              | ID
 | -------------- | -------------                                  | 
-|      AAiT  ©   | [Muluken Hakim](https://github.com/mulehakim)  |UGR/1110/12
+|        ©   | [Muluken Hakim](https://github.com/mulehakim)  |UGR/1110/12
 |      AAiT  ©   | [Abinet Anamo](https://github.com/abi26anamo)  |UGR/7110/12
 |      AAiT  ©   | Hayat Ibrahim                                  |UGR/189712
 
-|  Name                                                 | ID          | Section |
-| ------------------------------------------------------| ------------|---------|
-|  [Abinet Anamo](https://github.com/abi26anamo)        | UGR/7110/12 |    1    |
-|  [MULUKEN HAKIM](https://github.com/MuleHakim)        | UGR/1110/12 |    1    |
+| Campus |  Name                                                 | ID          |
+|--------| ------------------------------------------------------| ------------|
+|  AAiT  |  [MULUKEN HAKIM](https://github.com/MuleHakim)        | UGR/1110/12 |
+|  AAiT  |  [Abinet Anamo](https://github.com/abi26anamo)        | UGR/7110/12 |
+|  AAiT  |  Hayat Ibrahim                                        | UGR/1897/12 |
