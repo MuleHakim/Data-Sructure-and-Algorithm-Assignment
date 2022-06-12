@@ -21,3 +21,29 @@ def characters_with_frequency(data):
         else: 
             characters[element] += 1
     return characters
+
+# This function returns a dictionary which consists a characters with their huffman endoded code (characters_with_codes_Dict)
+
+# this is a dictionary for the characters and with their huffman encoding code value
+characters_with_codes_Dict = {}
+def characters_to_code(huffmanNode, val=''):
+    # huffman code for current huffmanNode
+    newVal = val + str(huffmanNode.code)
+
+    if(huffmanNode.left):
+        characters_to_code(huffmanNode.left, newVal)
+    if(huffmanNode.right):
+        characters_to_code(huffmanNode.right, newVal)
+
+    if(not huffmanNode.left and not huffmanNode.right):
+        characters_with_codes_Dict[huffmanNode.character] = newVal
+    return characters_with_codes_Dict        
+
+# This function returns the encoded output for the given data
+def outputEncoded(data, coding):
+    encoding_output = []
+    for i in data:
+        encoding_output.append(coding[i])
+        
+    string = ''.join([str(item) for item in encoding_output])    
+    return string
