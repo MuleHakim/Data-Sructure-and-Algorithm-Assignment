@@ -37,3 +37,9 @@
 |  3  |   Frequencies of Characters
 |  4  |   Huffman code for Characters                                              
 |  5  |   Encoded output for the whole characters or for the given file
+
+
+# Assignment 4
+## Shortest Path
+
+### Displays the shortest path for the given paths in the form of file
