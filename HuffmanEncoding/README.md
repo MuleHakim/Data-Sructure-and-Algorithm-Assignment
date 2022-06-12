@@ -19,7 +19,6 @@
 
 
 ## License
-|----------------------------------------------------------------|
-| AAiT © [Muluken Hakim](https://github.com/mulehakim)|
-| AAiT © [Abinet Anamo](https://github.com/abi26anamo)|
+| AAiT © [Muluken Hakim]|
+| AAiT © [Abinet Anamo]|
 | AAiT © Hayat Ibrahim|
