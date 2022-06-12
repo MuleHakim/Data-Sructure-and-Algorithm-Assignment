@@ -27,5 +27,5 @@ output in different files.
 ## License
 
 AAiT © [Muluken Hakim](https://github.com/mulehakim)
-AAiT © [Abinet Anamo](https://github.com/ab26)
+AAiT © [Abinet Anamo](https://github.com/abi26anamo)
 AAiT © Hayat Ibrahim
