@@ -42,4 +42,4 @@
 # Assignment 4
 ## Shortest Path
 
-### Displays the shortest path for the given paths in the form of file
+### Displays the shortest path for the given paths
