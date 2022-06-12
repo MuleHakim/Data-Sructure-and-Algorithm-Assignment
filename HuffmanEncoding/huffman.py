@@ -47,3 +47,44 @@ def outputEncoded(data, coding):
         
     string = ''.join([str(item) for item in encoding_output])    
     return string
+
+# This functions returns the number of bits for the given data before and after compression 
+def numOfBits(data, huffman_encoding):
+    """
+    On modern computer each English characters takes up exactly one byte or eight bits.
+    The reason I use 8 bits is that it is big enough to store all the characters, and
+    the text does not take up any more space than it absolutely has to and
+    also helpful to have a fixed number of bits per character because it makes searching text really fast.
+    """
+    beforeCompression = len(data) * 8 
+    afterCompression = 0
+    characters = huffman_encoding.keys()
+    for symbol in characters:
+        count = data.count(symbol)
+        afterCompression += count * len(huffman_encoding[symbol]) 
+    return beforeCompression,afterCompression        
+
+def HuffmanTreeEncoding(data):
+    charactersDict = characters_with_frequency(data)
+    charactersValue = charactersDict.keys()
+    # we create this list to store the characters with their frequencies
+    nodesList = []
+    
+    # we put all the characters with their frequencies (charactersDict) into a list called nodeList
+    # converting characters and frequencies into huffman tree nodes
+    for character in charactersValue:
+        nodesList.append(HFTNode(charactersDict[character], character))
+    
+    while len(nodesList) > 1:
+        """
+        The greater the frequency, the lower the characters goies in the nodeList
+
+        We remove the first two items in the sorted list of nodesList
+
+        Then we combine into a tree to get new node
+
+        We append the new node to the list and again we sort it.
+
+        This step will be repeated until the loop terminates which means untill the list is empty.
+
+        """
