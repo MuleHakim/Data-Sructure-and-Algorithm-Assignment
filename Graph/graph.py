@@ -39,3 +39,29 @@ def bfs(graph, src, dest):
                 parent[neighbors[0]] = last
                 queue.append(neighbors[0])
     return "graph is not connected"
+def test():
+    fileName = input("Enter Name of the file:: ")
+    graph = get_graph(fileName)
+    v1,v2 = input("Enter two vertices::").split()
+
+    for i,j in zip(graph.keys(),graph.values()):
+        vertex.append(i)
+        adjacent.append(j)
+    for i,j in zip(vertex,adjacent):
+        for k in j:
+            edges.append([int(i),int(k)])
+    print("The number of vertices is " + str(len(vertex)))
+    listKeys = [i for i in graph.keys()]
+    listValues = [i for i in graph.values()]
+    for i in range(len(graph)):
+        print("Vertex"+str(listKeys[i]) + ": ",end=' ')
+        for j in range(len(listValues[i])):
+            print("(" + str(i) + ", " + 
+                    str(listValues[i][j]), end=") ")
+        print()
+    shortest_path=bfs(graph,v1, v2)
+    t=' '.join(shortest_path)
+    print("Path is ",t)
+
+if __name__ == "main":
+    test()
