@@ -1,25 +1,17 @@
-import re
 from collections import deque
 
 def get_graph(filename):
     adjacent_list = {}
     with open(filename, "r") as file:
         for edge in file:
-            file_content = re.split('[ \n]', edge)
-            if len(file_content) == 3:
-                adjacent_list[file_content[0]] = [file_content[1], file_content[2]]
-            elif len(file_content) == 4:
-                adjacent_list[file_content[0]] = [file_content[1], file_content[2]]
-            elif len(file_content) == 5:
-                adjacent_list[file_content[0]] = [file_content[1], file_content[2], file_content[3]]
-            elif len(file_content) == 6:
-                adjacent_list[file_content[0]] = [file_content[1], file_content[2], file_content[3],
-                                                  file_content[4]]
+            edge = edge.replace(" ","")
+            if len(edge)>1:
+                adjacent_list[edge[0]] = [num for num in edge[1:-1]]
     return adjacent_list
 vertex=[]
 adjacent=[]
 edges=[] 
-def bfs(graph, src, dest):
+def breadthFirstSearch(graph, src, dest):
     queue = deque()
     visited = {src: 1}
     parent = {}
@@ -38,7 +30,7 @@ def bfs(graph, src, dest):
                 visited[neighbors[0]] = 1
                 parent[neighbors[0]] = last
                 queue.append(neighbors[0])
-    return "graph is not connected"
+    return "Hey the graph is not connected"
 def test():
     fileName = input("Enter Name of the file:: ")
     graph = get_graph(fileName)
@@ -50,18 +42,20 @@ def test():
     for i,j in zip(vertex,adjacent):
         for k in j:
             edges.append([int(i),int(k)])
-    print("The number of vertices is " + str(len(vertex)))
+    print("The number of vertices is " + str(len(vertex)-1))
     listKeys = [i for i in graph.keys()]
     listValues = [i for i in graph.values()]
     for i in range(len(graph)):
+        if i == 0: continue
         print("Vertex"+str(listKeys[i]) + ": ",end=' ')
         for j in range(len(listValues[i])):
             print("(" + str(i) + ", " + 
                     str(listValues[i][j]), end=") ")
         print()
-    shortest_path=bfs(graph,v1, v2)
-    t=' '.join(shortest_path)
-    print("Path is ",t)
+    shortest_path = breadthFirstSearch(graph,v1, v2)
+    path = ' '.join(shortest_path)
+    print("Path is ",path)
 
-if __name__ == "main":
+def main():
     test()
+main()
